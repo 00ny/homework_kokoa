@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <!-- datalist{ display:grid; grid-auto-flow: colums; width:500px; } -->
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div>
+        <label for="First name">First name</label>
+        <input id="First name" required placeholder="First name" type="text" />
+      </div>
+      <div>
+        <label for="Last name">Last name</label>
+        <input id="Last name" required placeholder="Last name" type="text" />
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input id="Email" required placeholder="Email" type="email" />
+      </div>
+      <div>
+        <label for="Username">Username</label>
+        <input id="Username" required placeholder="Username" type="text" />
+      </div>
+      <label for="Password">Password</label>
+      <input
+        id="Password"
+        required
+        minlength="10"
+        placeholder="Password"
+        type="password"
+      />
+      <div>
+        <label for="Birthday">Birth date</label>
+        <input id="Birthdate" required placeholder="Birth date" type="date" />
+      </div>
+      <div>
+        <label for="How-happy">How happy are you?</label>
+        <input
+          id="How-happy"
+          required
+          placeholder="How happy are you?"
+          type="range"
+          list="steplist"
+        />
+        <datalist
+          id="steplist"
+          display="grid"
+          grid-auto-flow="column"
+          width="500px"
+        >
+          <option value="0">0</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="75">75</option>
+          <option value="100">100</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="fav.color">What is your fav.color?</label>
+        <input id="fav.color" required type="color" />
+      </div>
+      <input required type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
+
+<!-- 이유는 잘 모르겠지만 for과 id는 같아야 한다. 연결된다네? -->
