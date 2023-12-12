@@ -1,0 +1,89 @@
+body {
+    background-color:mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+@keyframes round-rotate {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ( -180deg );
+        /* 왜 음수가 안먹지..? */
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    margin: 50px;
+    animation: round-rotate 2s infinite;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 15px;
+}
+
+@keyframes bar-scale {
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: scaleY(1.75);
+    }
+    40%{
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    margin: 50px;
+}
+
+.bar {
+    width: 10px;
+    height: 50px;
+    background-color: white;
+    margin:5px;
+}
+
+.bar:first-child {
+    animation: bar-scale 1.2s infinite;
+}
+
+.bar:nth-child(2) {
+    animation: bar-scale 1.2s infinite;
+    animation-delay: 0.1s;
+}
+
+.bar:nth-child(3) {
+    animation: bar-scale 1.2s infinite;
+    animation-delay: 0.2s;
+}
+
+.bar:nth-child(4) {
+    animation: bar-scale 1.2s infinite;
+    animation-delay: 0.3s;
+}
+
+.bar:last-child {
+    animation: bar-scale 1.2s infinite;
+    animation-delay: 0.4s;
+}
