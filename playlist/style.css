@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    /* box-sizing: border-box; */
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    height: 100vh;
+    width: 350px;
+
+}
+
+.unite {
+    padding-left: 20px;
+}
+
+.head {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head i {
+    position:absolute;
+    left:30px;
+}
+
+.head span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#nemo {
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 15%;
+}
+
+#nemo:first-child {
+    width: 120px;
+    height: 120px;
+}
+
+#nemo i {
+    font-size: 40px;
+}
+
+.music_discription {
+    margin-left: 18px;
+}
+
+
+.playing_album .music_discription h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.playing_album {
+    display: flex;
+    margin: 30px 0px;
+    align-items: center;
+
+}
+
+.playing_album div:first-child {
+    color:white;
+    background-color:#FEBD11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 드이어 세번째 */
+
+.buttons {
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+}
+
+.buttons div {
+    margin: 0px 10px;
+    box-shadow: 0px 3px 0px 0px black;
+    border : solid 2px black;
+}
+
+.play {
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+.play span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.buttons div:not(:first-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nemo {
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 15%;
+}
+
+.playlist {
+    display: flex;
+    /* background-color: black; */
+    margin-top: 45px;
+    align-items: center;
+}
+
+.music_discription h6 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.music_discription span {
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+
+.music_discription h4 {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#M {
+    background-color: #F85A2A;
+}
+
+#A {
+    background-color: #FE89BC;
+}
+
+#T {
+    background-color:#1847E5;
+}
+
+#S {
+    background-color:#08C6AD;
+}
