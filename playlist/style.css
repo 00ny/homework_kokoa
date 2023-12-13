@@ -11,13 +11,15 @@ body {
 }
 
 .screen {
+    border:#08C6AE solid 5px;
+    border-top: #08C6AE solid 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
     position: relative;
-    height: 100vh;
+    height: 98vh;
     width: 350px;
 
 }
@@ -27,7 +29,7 @@ body {
 }
 
 .head {
-    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
