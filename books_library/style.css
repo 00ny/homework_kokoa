@@ -20,6 +20,8 @@ body {
     position: relative;
     height: 100px;
     width: 350px;
+    position:fixed;
+    z-index: 1;
 }
 
 .yellow i {
@@ -35,11 +37,12 @@ body {
 
 .search {
     display: flex;
+    z-index: 2;
     align-items: center;
-    position: absolute;
+    position: fixed;
     justify-content: center;
-    right : 20px;
-    top:65px;
+    right : 130px;
+    top:75px;
     color: rgba(0, 0, 0, 0.4);
 }
 
@@ -62,7 +65,7 @@ body {
 
 .main {
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top:150px;
 }
 
 .big_book {
@@ -144,6 +147,7 @@ body {
 
 .book_shelf {
     display: flex;
+    overflow-x: scroll;
 }
 
 .small_books {
