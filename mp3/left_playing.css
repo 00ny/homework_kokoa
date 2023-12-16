@@ -13,3 +13,15 @@
     top:10px;
     left:10px;
 }
+
+.big i {
+    font-size: 150px;
+    top:0px;
+    left:0px;
+    padding:40px 50px;
+    border-radius: 10%;
+
+    color:#79BFBC;
+
+    box-shadow: inset 0px 0px 40px 10px #79BFBC;
+}
