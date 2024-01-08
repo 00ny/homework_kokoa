@@ -56,17 +56,6 @@
     }
 }
 
-/* @media screen and (min-width: 1100px) {
-    .screen {
-      animation: animate_reset 2s ease-in-out forwards;
-    }
+.play_bar-buttons > a:checked {
+    color: none;
 }
-
-@keyframes animate_reset {
-    from {
-        transition : none;
-    }
-    to {
-        left: 0px;
-    }
-} */
